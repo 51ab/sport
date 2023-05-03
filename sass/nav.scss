@@ -1,18 +1,18 @@
 .nav{
     height:6rem;
     position: sticky;
-    background-color: black;
+    background-color: white;
     display:flex;
     padding: 0 1%;
     &_left{
-        margin-right: 1rem;
+        margin-right: 3%;
         height: 6rem;
        // width:15%;
-        background-color: black;
+        background-color: white;
         img{
           height:100%;  
           
-          background-color: black;
+          background-color: white;
         }
         
     }
@@ -25,10 +25,30 @@
         justify-content: space-between;
         align-items: center;
         li{
-            color:white;
-            text-decoration: none;
             list-style: none;
-            margin-right: 2%;
+            a{
+            color:rgb(72, 70, 70);
+            text-decoration: none;
+            
+            padding: 12px 0;
+            font-size: 1.1rem;
+            font-family: poppins,sans-serif;
+            &::after{
+                width:inherit;
+                background-color:green;
+                height: 1px;
+                content: "";
+                display: block;
+            }
+            &:hover,&:active{
+                &::after{
+                   
+                    background-color:green;
+                    
+                }
+            }
+            }
+            
         }
         }
     }
