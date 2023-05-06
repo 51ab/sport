@@ -33,9 +33,9 @@
           font-family: poppins,sans-serif; }
           .nav_right ul li a::after {
             width: inherit;
-            background-color: green;
-            height: 1px;
+            height: 3.5px;
             content: "";
-            display: block; }
-          .nav_right ul li a:hover::after, .nav_right ul li a:active::after {
+            display: block;
+            margin-top: 5px; }
+          .nav_right ul li a:hover::after, .nav_right ul li a:active::after, .nav_right ul li a:focus::after {
             background-color: green; }

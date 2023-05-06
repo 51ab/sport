@@ -3,7 +3,7 @@
     position: sticky;
     background-color: white;
     display:flex;
-    padding: 0 1%;
+    padding: 1% 1%;
     &_left{
         margin-right: 3%;
         height: 6rem;
@@ -33,14 +33,16 @@
             padding: 12px 0;
             font-size: 1.1rem;
             font-family: poppins,sans-serif;
+           
             &::after{
                 width:inherit;
-                background-color:green;
-                height: 1px;
+               // background-color:green;
+                height: 3.5px;
                 content: "";
                 display: block;
+                margin-top: 5px;
             }
-            &:hover,&:active{
+            &:hover,&:active,&:focus{
                 &::after{
                    
                     background-color:green;
