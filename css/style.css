@@ -3,11 +3,11 @@
   margin: 0; }
 
 .nav {
-  height: 6rem;
+  height: 8rem;
   position: sticky;
   background-color: white;
   display: flex;
-  padding: 0 1%; }
+  padding: 1% 1%; }
   .nav_left {
     margin-right: 3%;
     height: 6rem;
@@ -39,3 +39,29 @@
             margin-top: 5px; }
           .nav_right ul li a:hover::after, .nav_right ul li a:active::after, .nav_right ul li a:focus::after {
             background-color: green; }
+
+.section_home {
+  display: flex; }
+  .section_home .home_cal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center; }
+
+.home_cal .search-container {
+  float: right; }
+
+.home_cal input[type=text] {
+  font-size: 17px;
+  border: none; }
+
+.home_cal .search-container button {
+  float: right;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer; }
+
+.home_cal .search-container button:hover {
+  background: #ccc; }
