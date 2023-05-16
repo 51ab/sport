@@ -121,7 +121,12 @@
 .home_page {
   background-color: #eee;
   display: flex;
-  font-family: poppins; }
+  font-family: poppins;
+  height: 100%;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0% 100%);
+  padding: 0 0 5% 0;
+  z-index: 0;
+  opacity: 1; }
   .home_page .home_page_left {
     width: 50%;
     padding: 3% 0% 3% 3%; }
@@ -146,7 +151,8 @@
     .home_page .home_page_right img {
       width: 35%;
       height: 50%;
-      border-radius: 100%; }
+      border-radius: 100%;
+      z-index: 9; }
     .home_page .home_page_right .img_1 {
       float: right; }
     .home_page .home_page_right .img_2 {
@@ -158,4 +164,6 @@
       margin-top: -7rem;
       height: 60%; }
     .home_page .home_page_right .img_4 {
-      margin-top: -2rem; }
+      margin-top: -2rem;
+      z-index: 99;
+      opacity: 1; }
