@@ -114,9 +114,58 @@ font-size: 1.3rem;
   .home_page{
     background-color: #eee;
     display: flex;
+    font-family: poppins;
 
+    .home_page_left{
+      width:50%;
+      padding: 3% 0% 3% 3%;
+
+    }
+    h1{
+      font-size: 4.2rem;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-family: fantasy;
+      letter-spacing: 3px;
+      font-style: oblique;
+      
+    }
+    h2{
+      font-size: 2.5rem;
+      font-weight: 700;
+      font-family: poppins;
+    }
+    h4{
+      font-size: 1.6rem;
+      color:rgb(202, 180, 180);
+      font-weight: 100;
+    }
     .home_page_right{
+      width:50%;
       img{
-      width:10rem;
+      width:35%;
+      height:50%;
+      border-radius: 100%;
+      }
+      .img_1{
+          float:right;
+      }
+      .img_2{
+        
+        margin-top: 1.5rem;
+        float: right;
+        width:30%;
+        //height: 40%;
+        
+      }
+      .img_3{
+        width:45%;
+        margin-top: -7rem;
+        height: 60%;
+      }
+      .img_4{
+      margin-top: -2rem;
+      
     }}
   }
