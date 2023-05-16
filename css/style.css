@@ -41,6 +41,7 @@
             background-color: green; }
 
 .section_home {
+  padding: 0% 2%;
   display: flex;
   width: 100%;
   height: 5rem;
@@ -49,27 +50,52 @@
     width: 100%; }
   .section_home .home_cal {
     display: flex;
-    justify-content: space-around;
+    gap: 1rem;
     align-items: center;
     justify-items: center; }
     .section_home .home_cal input.input-field {
       font-size: 1.5rem;
-      color: blue; }
+      color: blue;
+      padding: 4% 2%;
+      border: 1px solid #a49f9f;
+      border-radius: 5px; }
     .section_home .home_cal select {
       padding: 1%;
       font-size: 1.4rem;
-      color: blue; }
+      color: blue;
+      width: 7rem;
+      padding: 6% 2%;
+      border-radius: 5px;
+      border: 1px solid #b4acac; }
+      .section_home .home_cal select:active, .section_home .home_cal select:focus, .section_home .home_cal select:visited {
+        border: 1px solid #09ef37; }
+    .section_home .home_cal h3 {
+      font-weight: 100;
+      font-family: poppins;
+      font-size: 1.2rem; }
 
 .home_cal .search-container {
   float: right;
-  border-radius: 20px;
-  padding: 0 1%; }
+  border-radius: 25px;
+  padding: 0 1%;
+  display: flex;
+  gap: 1rem;
+  width: 30%; }
   .home_cal .search-container .search_1 {
-    border-radius: 20px;
-    border: 1px solid black; }
+    border-radius: 25px;
+    text-align: center;
+    height: 2rem;
+    width: 100%;
+    border: 1px solid #b4acac; }
+    .home_cal .search-container .search_1:hover {
+      border: 1px solid black; }
+    .home_cal .search-container .search_1:active, .home_cal .search-container .search_1:focus, .home_cal .search-container .search_1:visited {
+      border: 1px solid #0ae27a; }
   .home_cal .search-container .search_2 {
     background-color: gainsboro;
-    width: 5rem; }
+    width: 7rem;
+    text-align: center;
+    border-radius: 25px; }
 
 .home_cal input[type=text] {
   padding: 6px;
