@@ -63,12 +63,16 @@
       padding: 1%;
       font-size: 1.4rem;
       color: blue;
-      width: 7rem;
+      width: max-content;
       padding: 6% 2%;
       border-radius: 5px;
       border: 1px solid #b4acac; }
       .section_home .home_cal select:active, .section_home .home_cal select:focus, .section_home .home_cal select:visited {
-        border: 1px solid #09ef37; }
+        border: 1px solid #0722d2; }
+      .section_home .home_cal select:visited, .section_home .home_cal select:focus, .section_home .home_cal select:checked {
+        width: max-content; }
+      .section_home .home_cal select option {
+        font-size: 1rem; }
     .section_home .home_cal h3 {
       font-weight: 100;
       font-family: poppins;
@@ -92,10 +96,11 @@
     .home_cal .search-container .search_1:active, .home_cal .search-container .search_1:focus, .home_cal .search-container .search_1:visited {
       border: 1px solid #0ae27a; }
   .home_cal .search-container .search_2 {
-    background-color: gainsboro;
+    background-color: #eee;
     width: 7rem;
     text-align: center;
-    border-radius: 25px; }
+    border-radius: 25px;
+    border: none; }
 
 .home_cal input[type=text] {
   padding: 6px;
@@ -112,3 +117,9 @@
 .home_cal .search-container button:hover {
   background: #ccc;
   border: none; }
+
+.home_page {
+  background-color: #eee;
+  display: flex; }
+  .home_page .home_page_right img {
+    width: 10rem; }

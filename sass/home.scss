@@ -26,12 +26,19 @@ font-size: 1.3rem;
         padding: 1%;
         font-size: 1.4rem;
         color:blue;
-        width:7rem;
+        width:max-content;
         padding: 6% 2%;
         border-radius: 5px;
         border: 1px solid rgb(180, 172, 172);
         &:active,&:focus,&:visited{
-          border: 1px solid rgb(9, 239, 55);
+          border: 1px solid rgb(7, 34, 210);
+        }
+        &:visited,&:focus,&:checked{
+          //font-size: 1rem;
+          width:max-content;
+        }
+        option{
+          font-size: 1rem;
         }
     }
     h3{
@@ -64,15 +71,17 @@ font-size: 1.3rem;
           border: 1px solid rgb(10, 226, 122);
         }
     }
+    
     .search_2{
-        background-color: gainsboro;
+        background-color: #eee;
         width: 7rem;
         text-align: center;
         border-radius: 25px;
+        border: none;
         
-        
+    } 
 
-    }
+    
   }
   
   .home_cal input[type=text] {
@@ -99,4 +108,15 @@ font-size: 1.3rem;
   .home_cal .search-container button:hover {
     background: #ccc;
     border: none;
+  }
+
+
+  .home_page{
+    background-color: #eee;
+    display: flex;
+
+    .home_page_right{
+      img{
+      width:10rem;
+    }}
   }
