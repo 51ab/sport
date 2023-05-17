@@ -215,15 +215,44 @@
     justify-content: center;
     align-items: center;
     text-align: center; }
+  .explore h3 {
+    text-align: center;
+    font-family: poppins;
+    margin: 4rem;
+    font-size: 3rem; }
 
 .facility_page {
   display: flex;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-family: poppins;
+  color: gray;
+  align-items: center; }
   .facility_page .facilities_box {
     width: 30%; }
     .facility_page .facilities_box .fac_heading {
       display: flex;
       justify-content: space-between; }
+  .facility_page i {
+    color: #ede511; }
   .facility_page img {
-    height: 40%;
-    text-align: center; }
+    width: 100%;
+    text-align: center;
+    border-radius: 15px; }
+  .facility_page h5 {
+    color: gainsboro;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem; }
+  .facility_page button {
+    font-size: 4rem;
+    background-color: none;
+    border: none;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center; }
+    .facility_page button a {
+      letter-spacing: -11px; }
