@@ -1,0 +1,57 @@
+.explore{
+    padding: 2%;
+    justify-content: center;
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+        font-family:poppins ;
+        font-weight: 900;
+    }
+    ul{
+        margin-top: 2rem;
+        display: flex;
+        width:100%;
+        justify-content: space-between;
+        gap:1.5rem;
+        height: 5rem;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        button{
+            background-color: transparent;
+border: none;
+            a{
+
+border: none;
+font-size: 5rem;
+        }}
+    }
+    li{
+        list-style: none;
+        width: 80%;
+        //background-color: whitesmoke;
+        gap:1rem;
+        display: flex;
+        border-radius: 15px;
+        padding: 1%;
+        box-shadow: 0 4px 8px rgba(27,78,163,.16), 0 8px 16px rgba(41,121,255,.16);
+       
+        img{
+            width:3rem;
+            height: 3rem;
+            border-radius: 50%;
+            float: left;
+        }
+    }
+    a{
+        text-decoration: none;
+        color:black;
+        font-family: poppins;
+        font-weight: bolder;
+        display: flex;
+        justify-items: center;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
