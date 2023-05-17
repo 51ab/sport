@@ -215,3 +215,15 @@
     justify-content: center;
     align-items: center;
     text-align: center; }
+
+.facility_page {
+  display: flex;
+  justify-content: space-between; }
+  .facility_page .facilities_box {
+    width: 30%; }
+    .facility_page .facilities_box .fac_heading {
+      display: flex;
+      justify-content: space-between; }
+  .facility_page img {
+    height: 40%;
+    text-align: center; }

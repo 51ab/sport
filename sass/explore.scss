@@ -55,3 +55,20 @@ font-size: 5rem;
         text-align: center;
     }
 }
+
+.facility_page{
+    display: flex;
+    justify-content: space-between;
+    .facilities_box{
+        width: 30%;
+        .fac_heading{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    img{
+       
+        height: 40%;
+        text-align: center;
+    }
+}
