@@ -2,6 +2,9 @@
   padding: 0;
   margin: 0; }
 
+.main_nav {
+  position: sticky; }
+
 .nav {
   height: 8rem;
   position: sticky;
@@ -256,3 +259,14 @@
     align-items: center; }
     .facility_page button a {
       letter-spacing: -11px; }
+
+.work {
+  padding: 4% 0;
+  background-color: gainsboro;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  text-align: center; }
+  .work .work_box {
+    display: flex;
+    text-align: center;
+    width: 40%;
+    justify-content: space-between; }

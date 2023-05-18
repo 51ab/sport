@@ -1,0 +1,12 @@
+.work{
+    padding: 4% 0;
+    background-color: gainsboro;
+    clip-path: polygon(0% 0% , 100% 0%, 100% 85%, 0% 100% );
+    text-align: center;
+    .work_box{
+        display: flex;
+        text-align: center;
+        width: 40%;
+        justify-content: space-between;
+    }
+}
