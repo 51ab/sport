@@ -66,16 +66,41 @@
         padding: 0 25%;
         justify-content: center;
         gap:3rem;
-        
-        .workarrow_boxes_1{
+
+
+        .workarrow_boxes_2{
+            display: flex;
+            &::after{
+                background-color:black;
+                height:1.5rem;
+                content:"";
+                width:3rem;
+                clip-path: polygon(100% 39%, 0 0, 0 100%);
+                margin-top: 1.5rem;
+                
+            }
+&::before{
+    background-color:black;
+    height:1.5rem;
+    content:"";
+    width:3rem;
+    clip-path: polygon(100% 39%, 0 0, 0 100%);
+    margin-top: 1.5rem;
+    
+}        
+        }
+        .workarrow_boxes{
             display: inline-grid;
             /* align-items: center; */
             gap:1rem;
             justify-items: center;
+            
+
+
             h3{
                 justify-items: center;
     color: white;
-    background-color: blue;
+    background-color: rgb(31, 31, 247);
     border-radius: 50%;
     height: 4rem;
     width: 4rem;
