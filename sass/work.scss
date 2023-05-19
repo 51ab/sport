@@ -1,15 +1,20 @@
 .work{
     padding: 4% 0;
-    background-color: gainsboro;
-    clip-path: polygon(0% 0% , 100% 0%, 100% 85%, 0% 100% );
+    background-color: rgb(243, 241, 241);
+    clip-path: polygon(0% 5% , 98% 0%, 100% 95%, 0% 100% );
     text-align: center;
+    h1{
+        font-family: poppins;
+        font-size: 2rem;
+        font-weight: 900;
+    }
     .works{
        // height: 5rem;
     }
     .box{
         align-items: center;
         height: 2rem;
-        width: 10rem;
+        width: 15rem;
         background-color: bisque;
         display: flex;
         justify-content: space-between;
@@ -20,10 +25,24 @@
             to right,
             white 0%, white 50%,green 50%, green 100%
         );
+
+        .btn1{
+            &:hover{
+            .box{
+                background-image: linear-gradient(
+                    to right,
+                    pink 0%, pink 50%,green 50%, green 100%
+                );
+            }
+            }
+            
+        }
         button{
             background-color: transparent;
             border: none;
+            padding: 0 8%;
         }
+
         a{
             text-decoration: none;
             border: none;
@@ -39,5 +58,43 @@
         justify-content: space-between;
         padding: 5% 40%;
         
+    }
+
+
+    .workarrow_box{
+        display: flex;
+        padding: 0 25%;
+        justify-content: center;
+        gap:3rem;
+        
+        .workarrow_boxes_1{
+            display: inline-grid;
+            /* align-items: center; */
+            gap:1rem;
+            justify-items: center;
+            h3{
+                justify-items: center;
+    color: white;
+    background-color: blue;
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    text-align: center;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Poppins';
+            }
+h2{
+    font-family: poppins;
+}
+p{
+    color:rgb(179, 172, 172);
+    font-family: poppins;
+    font-weight: 300;
+}
+        }
     }
 }
