@@ -102,6 +102,9 @@ font-size: 5rem;
         justify-content: center;
     text-align: center;
     align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75) inset;
         a{
             letter-spacing: -11px;
         }

@@ -256,7 +256,10 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    align-items: center; }
+    align-items: center;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75) inset;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75) inset;
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75) inset; }
     .facility_page button a {
       letter-spacing: -11px; }
 
@@ -298,6 +301,12 @@
     width: 20%;
     justify-content: space-between;
     padding: 5% 40%; }
+  .work .workarrow_boxes_1 {
+    display: flex; }
+    .work .workarrow_boxes_1:after {
+      background-color: black;
+      height: 2px;
+      width: 12px; }
   .work .workarrow_box {
     display: flex;
     padding: 0 25%;
@@ -306,24 +315,37 @@
     .work .workarrow_box .workarrow_boxes_2 {
       display: flex; }
       .work .workarrow_box .workarrow_boxes_2::after {
-        background-color: black;
+        background-color: #059d29;
         height: 1.5rem;
         content: "";
         width: 3rem;
         clip-path: polygon(100% 39%, 0 0, 0 100%);
-        margin-top: 1.5rem; }
+        margin-top: 1.5rem;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33);
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33); }
       .work .workarrow_box .workarrow_boxes_2::before {
-        background-color: black;
         height: 1.5rem;
+        background-color: #059d29;
         content: "";
         width: 3rem;
         clip-path: polygon(100% 39%, 0 0, 0 100%);
-        margin-top: 1.5rem; }
+        margin-top: 1.5rem;
+        box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33) inset;
+        -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33) inset;
+        -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.33) inset; }
     .work .workarrow_box .workarrow_boxes {
       display: inline-grid;
       /* align-items: center; */
       gap: 1rem;
       justify-items: center; }
+      .work .workarrow_box .workarrow_boxes hr {
+        z-index: -1;
+        height: 1px;
+        width: 475px;
+        position: absolute;
+        margin-top: 2.1rem;
+        border: 1px dashed #a29a9a; }
       .work .workarrow_box .workarrow_boxes h3 {
         justify-items: center;
         color: white;

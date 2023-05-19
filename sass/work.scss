@@ -60,32 +60,48 @@
         
     }
 
-
+    .workarrow_boxes_1{
+        display: flex;
+        &:after{
+            background-color: black;
+            height:2px;
+            width:12px;
+           // content:"";
+        }
+    }
     .workarrow_box{
         display: flex;
         padding: 0 25%;
         justify-content: center;
         gap:3rem;
 
+       
 
         .workarrow_boxes_2{
             display: flex;
             &::after{
-                background-color:black;
+                background-color:rgb(5, 157, 41);
                 height:1.5rem;
                 content:"";
                 width:3rem;
                 clip-path: polygon(100% 39%, 0 0, 0 100%);
                 margin-top: 1.5rem;
+                box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+                -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
+                -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33);
                 
             }
 &::before{
-    background-color:black;
+    
     height:1.5rem;
+    background-color:rgb(5, 157, 41);
     content:"";
     width:3rem;
     clip-path: polygon(100% 39%, 0 0, 0 100%);
     margin-top: 1.5rem;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33) inset;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33) inset;
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.33) inset;
     
 }        
         }
@@ -94,6 +110,15 @@
             /* align-items: center; */
             gap:1rem;
             justify-items: center;
+            hr{
+                z-index: -1;
+                height: 1px;
+                width: 475px;
+                //background-color: black;
+                position: absolute;
+                margin-top: 2.1rem;
+                border: 1px dashed rgb(162, 154, 154);
+            }
             
 
 
