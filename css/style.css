@@ -315,7 +315,7 @@
     .work .workarrow_box .workarrow_boxes_2 {
       display: flex; }
       .work .workarrow_box .workarrow_boxes_2::after {
-        background-color: #059d29;
+        background-color: #127629;
         height: 1.5rem;
         content: "";
         width: 3rem;
@@ -341,11 +341,13 @@
       justify-items: center; }
       .work .workarrow_box .workarrow_boxes hr {
         z-index: -1;
-        height: 1px;
+        height: 0.8px;
         width: 475px;
         position: absolute;
         margin-top: 2.1rem;
-        border: 1px dashed #a29a9a; }
+        background: #a19a9a;
+        background: repeating-linear-gradient(90deg, #aca6a6, #aea8a8 6px, transparent 6px, transparent 12px);
+        border: none; }
       .work .workarrow_box .workarrow_boxes h3 {
         justify-items: center;
         color: white;

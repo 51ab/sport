@@ -80,7 +80,7 @@
         .workarrow_boxes_2{
             display: flex;
             &::after{
-                background-color:rgb(5, 157, 41);
+                background-color:rgb(18, 118, 41);
                 height:1.5rem;
                 content:"";
                 width:3rem;
@@ -112,12 +112,15 @@
             justify-items: center;
             hr{
                 z-index: -1;
-                height: 1px;
+                height: 0.8px;
                 width: 475px;
                 //background-color: black;
                 position: absolute;
                 margin-top: 2.1rem;
-                border: 1px dashed rgb(162, 154, 154);
+                background: #a19a9a;
+                background: repeating-linear-gradient(90deg,#aca6a6,#aea8a8 6px,transparent 6px,transparent 12px);
+                border: none;
+                
             }
             
 
