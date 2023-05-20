@@ -1,0 +1,44 @@
+.getStarted{
+    display: flex;
+    background-color: rgb(250, 246, 246);
+    padding: 5%;
+
+    .start_left{
+        width: 50%;
+        h1{
+            font-size: 1.8rem;
+            font-weight: bolder;
+            font-style: bold;
+            font-family: poppins;
+        }
+        p{
+            color: rgb(124, 116, 116);
+            padding: 2% 6% 2% 0;
+            font-family: poppins;
+        }
+        ul{
+            list-style: none;
+            li{
+            
+                    font-family: poppins;
+                    font-size: 1.2rem;
+                    font-weight: bolder;
+                    i{
+                        color:blue;
+                        border-radius: 50%;
+                        border: 1px solid rgb(106, 106, 229);
+                        font-weight: lighter;
+                        font-size: medium;
+                        padding: 0.2rem;
+                    }
+                
+            }
+        }
+
+    }
+    .start_right{
+img{
+    width:10rem;
+}
+    }
+}

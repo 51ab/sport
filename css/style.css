@@ -342,7 +342,7 @@
       .work .workarrow_box .workarrow_boxes hr {
         z-index: -1;
         height: 0.8px;
-        width: 475px;
+        width: 523px;
         position: absolute;
         margin-top: 2.1rem;
         background: #a19a9a;
@@ -380,3 +380,34 @@
     font-size: 2rem;
     font-weight: bolder;
     font-family: poppins; }
+
+.getStarted {
+  display: flex;
+  background-color: #faf6f6;
+  padding: 5%; }
+  .getStarted .start_left {
+    width: 50%; }
+    .getStarted .start_left h1 {
+      font-size: 1.8rem;
+      font-weight: bolder;
+      font-style: bold;
+      font-family: poppins; }
+    .getStarted .start_left p {
+      color: #7c7474;
+      padding: 2% 6% 2% 0;
+      font-family: poppins; }
+    .getStarted .start_left ul {
+      list-style: none; }
+      .getStarted .start_left ul li {
+        font-family: poppins;
+        font-size: 1.2rem;
+        font-weight: bolder; }
+        .getStarted .start_left ul li i {
+          color: blue;
+          border-radius: 50%;
+          border: 1px solid #6a6ae5;
+          font-weight: lighter;
+          font-size: medium;
+          padding: 0.2rem; }
+  .getStarted .start_right img {
+    width: 10rem; }
