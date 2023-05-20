@@ -368,3 +368,15 @@
         color: #b3acac;
         font-family: poppins;
         font-weight: 300; }
+
+.unique_facility {
+  text-align: center;
+  padding: 2%; }
+  .unique_facility .facility_page {
+    text-align: center;
+    justify-content: center;
+    padding: 2%; }
+  .unique_facility h3 {
+    font-size: 2rem;
+    font-weight: bolder;
+    font-family: poppins; }
