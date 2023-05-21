@@ -450,3 +450,19 @@
       border-radius: 5px; }
     .getStarted .start_right .img_1 {
       width: 100%; }
+
+.footer {
+  display: flex;
+  padding: 2%;
+  justify-content: space-between;
+  align-items: center; }
+  .footer .footer_main {
+    display: flex;
+    align-items: center;
+    gap: 5rem; }
+    .footer .footer_main img {
+      height: 5rem; }
+    .footer .footer_main p {
+      font-size: 1.2rem;
+      color: gainsboro;
+      font-family: poppins; }
