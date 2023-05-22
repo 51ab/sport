@@ -10,6 +10,7 @@
     background-color: white;
     display:flex;
     padding: 1% 1%;
+
     &_left{
         margin-right: 3%;
         height: 6rem;
@@ -20,6 +21,26 @@
           
           background-color: white;
         }
+        .hamburger{
+            display: none;
+           
+        }
+        @media only screen and(max-width:$bp-largest)
+        {
+           display: flex;
+           width:100%;
+           .logo{
+            margin-left: 30%;
+           }
+           .hamburger{
+            display: flex;
+            margin-left: -8rem;
+            height: 10rem;
+            background-color: transparent;
+            margin-top: -2rem;
+           }
+        }
+       
         
     }
     &_right{
@@ -58,6 +79,10 @@
             }
             
         }
+        }
+        @media only screen and(max-width:$bp-largest)
+        {
+            display: none;
         }
     }
 }

@@ -27,6 +27,20 @@
     .nav_left img {
       height: 100%;
       background-color: white; }
+    .nav_left .hamburger {
+      display: none; }
+    @media only screen and (max-width: 75rem) {
+      .nav_left {
+        display: flex;
+        width: 100%; }
+        .nav_left .logo {
+          margin-left: 30%; }
+        .nav_left .hamburger {
+          display: flex;
+          margin-left: -8rem;
+          height: 10rem;
+          background-color: transparent;
+          margin-top: -2rem; } }
   .nav_right {
     width: 100%;
     display: flex; }
@@ -51,6 +65,9 @@
             margin-top: 5px; }
           .nav_right ul li a:hover::after, .nav_right ul li a:active::after, .nav_right ul li a:focus::after {
             background-color: green; }
+    @media only screen and (max-width: 75rem) {
+      .nav_right {
+        display: none; } }
 
 .section_home {
   padding: 0% 2%;
@@ -471,3 +488,7 @@
     .footer .footer_social i {
       color: grey;
       font-size: 1.2rem; }
+
+@media only screen and (max-width: 75rem) {
+  * {
+    font-size: 70%; } }
