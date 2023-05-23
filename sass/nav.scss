@@ -15,6 +15,8 @@
         margin-right: 3%;
         height: 6rem;
        // width:15%;
+       display: flex;
+       align-items: center;
         background-color: white;
         img{
           height:100%;  
@@ -23,29 +25,114 @@
         }
         .hamburger{
             display: none;
+            @media only screen and(max-width:$bp-largest){
+                display: flex;
+            }
            
         }
-        @media only screen and(max-width:$bp-largest)
-        {
-           display: flex;
-           width:100%;
-           .logo{
-            margin-left: 30%;
-           }
+         .nav_vertical{
+           // height:5rem;
+           display: none;
+           visibility: hidden;
+            button{
+
+              display: none;
+            }
+            .vertical_content{
+                display: none;
+            }
+   
+        } 
+       
+            @media only screen and(max-width:$bp-largest)
+            {
+            .nav_vertical{
+                height:2rem;
+                width:20rem;
+                display: flex;
+                visibility: visible;
+                button{
+                    display: flex;
+    height: 3rem;
+    width: 6rem;
+    margin-top: 0rem;
+    margin-left: 0rem;
+    background-color: transparent;
+    border: none;
+                }
+                .vertical_content{
+                    display: flex;
+                   height: 100vh;
+                   width:100%;
+                   background-color: rgba(black , .8);
+                   //position: fixed;
+                   z-index:9999;
+              // margin-left: -4rem;
+                   top:0;
+                   left:0;
+                   visibility: hidden;
+                   transition: all .5s;
+                }
+                &:target,&:hover{
+                    display: flex;
+                    visibility: visible;
+                    .vertical_content{
+                        display: flex;
+                        visibility: visible;
+                        margin-left: -6rem;
+                        background-color: white;
+
+                        .list{
+                            list-style: none;
+                            padding: 1%;
+                            li{
+                                a{
+                                    font-size: 2rem;
+                                    color:rgb(14, 13, 13);
+                                    text-decoration: none;
+                                    padding: 1%;
+                                    font-family: poppins;
+                                    img{
+                                        height: 10rem;
+                                        width:10rem;
+                                        margin-left: 0;
+                                    }
+                                }
+                            }
+                        }
+                    }
+        
+                }
+        
+            } 
+            .logo{
+            margin-left: 30rem;
+        
+            }}
+           
+           
            .hamburger{
             display: flex;
-            margin-left: -8rem;
-            height: 10rem;
+            height: 2rem;
+            width: 3rem;
             background-color: transparent;
-            margin-top: -2rem;
+   
+}
            }
-        }
-       
         
-    }
+        ////////////////////////////////////////////// mini nav
+       
+      
+        
+    
     &_right{
         width:100%;
         display: flex;
+
+        @media only screen and(max-width:$bp-largest)
+        {
+            display: none;
+        }
         ul{
             width:100%;
         display: flex;
@@ -80,9 +167,7 @@
             
         }
         }
-        @media only screen and(max-width:$bp-largest)
-        {
-            display: none;
-        }
+       
     }
 }
+  
