@@ -12,7 +12,8 @@
   position: sticky;
   left: 0;
   top: 0;
-  z-index: 99; }
+  z-index: 99;
+  display: flex; }
 
 .nav {
   height: 6rem;
@@ -20,12 +21,23 @@
   background-color: white;
   display: flex;
   padding: 1% 1%; }
+  .nav h2 {
+    visibility: hidden; }
   .nav_left {
     margin-right: 3%;
     height: 6rem;
     display: flex;
     align-items: center;
     background-color: white; }
+    .nav_left button {
+      width: 100%;
+      margin-top: 35px;
+      padding: 12px;
+      background: #dde1e7;
+      border: none;
+      font-size: 17px;
+      font-weight: 600;
+      margin-bottom: 32px; }
     .nav_left img {
       height: 100%;
       background-color: white; }
@@ -42,19 +54,44 @@
       .nav_left .nav_vertical .vertical_content {
         display: none; }
     @media only screen and (max-width: 75rem) {
+      .nav_left #click:checked ~ .vertical_content {
+        opacity: 1;
+        visibility: visible; }
       .nav_left .nav_vertical {
         height: 2rem;
         width: 28rem;
         display: flex;
         visibility: visible; }
+        .nav_left .nav_vertical input#click {
+          z-index: -1; }
         .nav_left .nav_vertical button {
           display: flex;
           height: 3rem;
           width: 6rem;
-          margin-top: 0rem;
+          margin-top: -1rem;
           margin-left: 0rem;
           background-color: transparent;
           border: none; }
+        .nav_left .nav_vertical #temp {
+          position: absolute;
+          left: 25rem;
+          top: 20px;
+          font-size: 30px;
+          background: #dde1e7;
+          padding: 3px;
+          padding-left: 11px;
+          padding-right: 11px;
+          border-radius: 50%;
+          cursor: pointer; }
+        .nav_left .nav_vertical:target {
+          display: flex;
+          visibility: visible;
+          opacity: 1; }
+          .nav_left .nav_vertical:target .vertical_content {
+            display: flex;
+            visibility: visible;
+            margin-left: -7rem;
+            background-color: white; }
         .nav_left .nav_vertical .vertical_content {
           display: flex;
           height: 100vh;
@@ -63,7 +100,18 @@
           top: 0;
           left: 0;
           visibility: hidden;
+          background-color: white;
+          margin-left: -8rem;
           transition: all .5s; }
+          .nav_left .nav_vertical .vertical_content .close {
+            position: absolute;
+            top: 2rem;
+            left: 25rem;
+            transition: all 200ms;
+            font-size: 3rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: #333; }
           .nav_left .nav_vertical .vertical_content .list {
             list-style: none;
             padding: 1%; }
@@ -88,17 +136,7 @@
               padding: 1rem; }
               .nav_left .nav_vertical .vertical_content .list .list_items:hover {
                 background-color: #f0e9e9;
-                border-radius: 2px; }
-        .nav_left .nav_vertical:target, .nav_left .nav_vertical:hover {
-          display: flex;
-          visibility: visible; }
-          .nav_left .nav_vertical:target .vertical_content, .nav_left .nav_vertical:hover .vertical_content {
-            display: flex;
-            visibility: visible;
-            margin-left: -7rem;
-            background-color: white; }
-      .nav_left .logo {
-        margin-left: 30rem; } }
+                border-radius: 2px; } }
     .nav_left .hamburger {
       display: flex;
       height: 2rem;
@@ -281,6 +319,7 @@
       background-color: transparent;
       border: none; }
       .explore ul button a {
+        color: gainsboro;
         border: none;
         font-size: 5rem; }
   .explore li {

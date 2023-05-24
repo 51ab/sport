@@ -4,13 +4,20 @@
     left:0;
     top: 0;
     z-index: 99;
+    display: flex;
 }.nav{
     height:6rem;
     position: sticky;
     background-color: white;
     display:flex;
     padding: 1% 1%;
-
+    .logo{
+        //margin-left: 30rem;
+    
+        }
+        h2{
+            visibility: hidden;
+        }
     &_left{
         margin-right: 3%;
         height: 6rem;
@@ -18,6 +25,25 @@
        display: flex;
        align-items: center;
         background-color: white;
+
+
+        
+        button
+        {
+          width: 100%;
+          margin-top: 35px;
+          padding: 12px;
+          background: #dde1e7;
+          border: none;
+          font-size: 17px;
+          font-weight: 600;
+          margin-bottom: 32px;
+
+
+ 
+        }
+
+
         img{
           height:100%;  
           
@@ -46,20 +72,55 @@
        
             @media only screen and(max-width:$bp-largest)
             {
+               
+                #click:checked~.vertical_content
+    {
+      opacity:1;
+      visibility:visible;
+    }
             .nav_vertical{
                 height:2rem;
                 width:28rem;
                 display: flex;
                 visibility: visible;
+                input#click{
+                    z-index: -1;
+                }
                 button{
                     display: flex;
     height: 3rem;
     width: 6rem;
-    margin-top: 0rem;
+    margin-top: -1rem;
     margin-left: 0rem;
     background-color: transparent;
     border: none;
+
+    
                 }
+                #temp
+                {
+                  position:absolute;
+                  left: 25rem;
+                  top: 20px;
+                  font-size: 30px;
+                  background: #dde1e7;
+                  padding: 3px;
+                  padding-left: 11px;
+                  padding-right: 11px;
+                  border-radius: 50%;
+                  cursor: pointer;
+                }
+                &:target{
+                    display: flex;
+                    visibility: visible;
+                    opacity: 1;
+                    .vertical_content{
+                        display: flex;
+                        visibility: visible;
+                        margin-left: -7rem;
+                        background-color: white;} }
+
+
                 .vertical_content{
                     display: flex;
                    height: 100vh;
@@ -71,7 +132,19 @@
                    top:0;
                    left:0;
                    visibility: hidden;
+                   background-color: white;
+                   margin-left: -8rem;
                    transition: all .5s;
+                   .close {
+                    position: absolute;
+                    top: 2rem;
+                    left: 25rem;
+                    transition: all 200ms;
+                    font-size: 3rem;
+                    font-weight: bold;
+                    text-decoration: none;
+                    color: #333;
+                  }
                    .list{
                     list-style: none;
                     padding: 1%;
@@ -112,25 +185,11 @@
                     }
                 }
                 }
-                &:target,&:hover{
-                    display: flex;
-                    visibility: visible;
-                    .vertical_content{
-                        display: flex;
-                        visibility: visible;
-                        margin-left: -7rem;
-                        background-color: white;
-
-                        
-                    }
-        
-                }
+              
         
             } 
-            .logo{
-            margin-left: 30rem;
-        
-            }}
+            
+          }
            
            
            .hamburger{
