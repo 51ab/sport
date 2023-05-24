@@ -48,7 +48,7 @@
             {
             .nav_vertical{
                 height:2rem;
-                width:20rem;
+                width:28rem;
                 display: flex;
                 visibility: visible;
                 button{
@@ -64,7 +64,7 @@
                     display: flex;
                    height: 100vh;
                    width:100%;
-                   background-color: rgba(black , .8);
+                  // background-color: rgba(black , .8);
                    //position: fixed;
                    z-index:9999;
               // margin-left: -4rem;
@@ -72,6 +72,45 @@
                    left:0;
                    visibility: hidden;
                    transition: all .5s;
+                   .list{
+                    list-style: none;
+                    padding: 1%;
+                    .list1{
+                        font-family: Brush Script MT;
+                        font-size: 5.5rem;
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 2rem;
+                        h2{
+                            margin-top: -1rem;
+                        }
+                        
+                    }
+
+                    li{
+                        
+                        a{
+                            font-size: 2rem;
+                            color:rgb(14, 13, 13);
+                            text-decoration: none;
+                           
+                            font-family: poppins;}
+                            img{
+                                height: 8rem;
+                                width:6rem;
+                                margin-left: 0;
+                            
+                        }
+                        
+                    }
+                    .list_items{
+                        padding: 1rem;
+                        &:hover{
+                            background-color: rgb(240, 233, 233);
+                            border-radius: 2px;
+                        }
+                    }
+                }
                 }
                 &:target,&:hover{
                     display: flex;
@@ -79,27 +118,10 @@
                     .vertical_content{
                         display: flex;
                         visibility: visible;
-                        margin-left: -6rem;
+                        margin-left: -7rem;
                         background-color: white;
 
-                        .list{
-                            list-style: none;
-                            padding: 1%;
-                            li{
-                                a{
-                                    font-size: 2rem;
-                                    color:rgb(14, 13, 13);
-                                    text-decoration: none;
-                                    padding: 1%;
-                                    font-family: poppins;
-                                    img{
-                                        height: 10rem;
-                                        width:10rem;
-                                        margin-left: 0;
-                                    }
-                                }
-                            }
-                        }
+                        
                     }
         
                 }

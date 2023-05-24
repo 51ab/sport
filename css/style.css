@@ -44,7 +44,7 @@
     @media only screen and (max-width: 75rem) {
       .nav_left .nav_vertical {
         height: 2rem;
-        width: 20rem;
+        width: 28rem;
         display: flex;
         visibility: visible; }
         .nav_left .nav_vertical button {
@@ -59,33 +59,44 @@
           display: flex;
           height: 100vh;
           width: 100%;
-          background-color: rgba(0, 0, 0, 0.8);
           z-index: 9999;
           top: 0;
           left: 0;
           visibility: hidden;
           transition: all .5s; }
+          .nav_left .nav_vertical .vertical_content .list {
+            list-style: none;
+            padding: 1%; }
+            .nav_left .nav_vertical .vertical_content .list .list1 {
+              font-family: Brush Script MT;
+              font-size: 5.5rem;
+              display: flex;
+              align-items: flex-end;
+              gap: 2rem; }
+              .nav_left .nav_vertical .vertical_content .list .list1 h2 {
+                margin-top: -1rem; }
+            .nav_left .nav_vertical .vertical_content .list li a {
+              font-size: 2rem;
+              color: #0e0d0d;
+              text-decoration: none;
+              font-family: poppins; }
+            .nav_left .nav_vertical .vertical_content .list li img {
+              height: 8rem;
+              width: 6rem;
+              margin-left: 0; }
+            .nav_left .nav_vertical .vertical_content .list .list_items {
+              padding: 1rem; }
+              .nav_left .nav_vertical .vertical_content .list .list_items:hover {
+                background-color: #f0e9e9;
+                border-radius: 2px; }
         .nav_left .nav_vertical:target, .nav_left .nav_vertical:hover {
           display: flex;
           visibility: visible; }
           .nav_left .nav_vertical:target .vertical_content, .nav_left .nav_vertical:hover .vertical_content {
             display: flex;
             visibility: visible;
-            margin-left: -6rem;
+            margin-left: -7rem;
             background-color: white; }
-            .nav_left .nav_vertical:target .vertical_content .list, .nav_left .nav_vertical:hover .vertical_content .list {
-              list-style: none;
-              padding: 1%; }
-              .nav_left .nav_vertical:target .vertical_content .list li a, .nav_left .nav_vertical:hover .vertical_content .list li a {
-                font-size: 2rem;
-                color: #0e0d0d;
-                text-decoration: none;
-                padding: 1%;
-                font-family: poppins; }
-                .nav_left .nav_vertical:target .vertical_content .list li a img, .nav_left .nav_vertical:hover .vertical_content .list li a img {
-                  height: 10rem;
-                  width: 10rem;
-                  margin-left: 0; }
       .nav_left .logo {
         margin-left: 30rem; } }
     .nav_left .hamburger {
@@ -299,7 +310,7 @@
     text-align: center;
     font-family: poppins;
     margin: 4rem;
-    font-size: 3rem; }
+    font-size: 2.4rem; }
 
 .facility_page {
   display: flex;
