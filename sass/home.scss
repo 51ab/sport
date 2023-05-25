@@ -1,13 +1,20 @@
 
 
 .section_home{
-  padding: 0% 2%;
+  padding: 1% 2%;
 display: flex;
 //width:100%;
 height:5rem;
 font-size: 1.3rem;
 .home{
     width: 100%;
+}
+.home_div{
+ 
+  display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center;
 }
 .home_cal{
     display: flex ;
@@ -179,3 +186,29 @@ font-size: 1.3rem;
       
     }}
   }
+
+  @media only screen and(max-width:$bp-largest)
+  {
+    .section_home{
+      height: 100%;
+    
+    .home_cal{
+      display: block
+    }
+    .home_div{
+      display: flex;
+    }
+    select{
+      padding: 1%;
+    }
+    
+      .home_div{
+        display: flex;
+      }
+      form{
+        display: block;
+      }
+       .home_cal input.input-field{
+        padding: 0.5% 52% 0.5% 0.4%;
+      }
+  }}

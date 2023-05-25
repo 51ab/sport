@@ -5,6 +5,7 @@
     top: 0;
     z-index: 99;
     display: flex;
+    background-color: white;
 }.nav{
     height:6rem;
     position: sticky;
@@ -15,9 +16,23 @@
         //margin-left: 30rem;
     
         }
-        h2{
+        h2.nav_heading_logo{
             visibility: hidden;
+            margin-left: 0rem;
+            width: 0;
         }
+        @media only screen and(max-width:$bp-largest)
+        {
+            
+            h2.nav_heading_logo{
+                font-family: Brush Script MT;
+                font-size: 5.5rem;
+                display: flex;
+                align-items: flex-end;
+                margin-left: 2rem;
+                visibility: visible;
+               }}
+      
     &_left{
         margin-right: 3%;
         height: 6rem;
@@ -72,6 +87,10 @@
        
             @media only screen and(max-width:$bp-largest)
             {
+                
+               
+                   
+                
                
                 #click:checked~.vertical_content
     {
@@ -100,7 +119,7 @@
                 #temp
                 {
                   position:absolute;
-                  left: 25rem;
+                  left: 24rem;
                   top: 20px;
                   font-size: 30px;
                   background: #dde1e7;
@@ -150,10 +169,12 @@
                     padding: 1%;
                     .list1{
                         font-family: Brush Script MT;
-                        font-size: 5.5rem;
+                        font-size: 7.5rem;
                         display: flex;
                         align-items: flex-end;
+                        margin-left: 4rem;
                         gap: 2rem;
+                        
                         h2{
                             margin-top: -1rem;
                         }

@@ -13,7 +13,8 @@
   left: 0;
   top: 0;
   z-index: 99;
-  display: flex; }
+  display: flex;
+  background-color: white; }
 
 .nav {
   height: 6rem;
@@ -21,8 +22,18 @@
   background-color: white;
   display: flex;
   padding: 1% 1%; }
-  .nav h2 {
-    visibility: hidden; }
+  .nav h2.nav_heading_logo {
+    visibility: hidden;
+    margin-left: 0rem;
+    width: 0; }
+  @media only screen and (max-width: 75rem) {
+    .nav h2.nav_heading_logo {
+      font-family: Brush Script MT;
+      font-size: 5.5rem;
+      display: flex;
+      align-items: flex-end;
+      margin-left: 2rem;
+      visibility: visible; } }
   .nav_left {
     margin-right: 3%;
     height: 6rem;
@@ -74,7 +85,7 @@
           border: none; }
         .nav_left .nav_vertical #temp {
           position: absolute;
-          left: 25rem;
+          left: 24rem;
           top: 20px;
           font-size: 30px;
           background: #dde1e7;
@@ -117,9 +128,10 @@
             padding: 1%; }
             .nav_left .nav_vertical .vertical_content .list .list1 {
               font-family: Brush Script MT;
-              font-size: 5.5rem;
+              font-size: 7.5rem;
               display: flex;
               align-items: flex-end;
+              margin-left: 4rem;
               gap: 2rem; }
               .nav_left .nav_vertical .vertical_content .list .list1 h2 {
                 margin-top: -1rem; }
@@ -171,12 +183,17 @@
             background-color: green; }
 
 .section_home {
-  padding: 0% 2%;
+  padding: 1% 2%;
   display: flex;
   height: 5rem;
   font-size: 1.3rem; }
   .section_home .home {
     width: 100%; }
+  .section_home .home_div {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center; }
   .section_home .home_cal {
     display: flex;
     gap: 1rem;
@@ -296,6 +313,22 @@
       margin-top: -2rem;
       z-index: 99;
       opacity: 1; }
+
+@media only screen and (max-width: 75rem) {
+  .section_home {
+    height: 100%; }
+    .section_home .home_cal {
+      display: block; }
+    .section_home .home_div {
+      display: flex; }
+    .section_home select {
+      padding: 1%; }
+    .section_home .home_div {
+      display: flex; }
+    .section_home form {
+      display: block; }
+    .section_home .home_cal input.input-field {
+      padding: 0.5% 52% 0.5% 0.4%; } }
 
 .explore {
   padding: 2%;
