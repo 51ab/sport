@@ -187,6 +187,9 @@
   display: flex;
   height: 5rem;
   font-size: 1.3rem; }
+  @media only screen and (max-width: 75rem) {
+    .section_home {
+      display: none; } }
   .section_home .home {
     width: 100%; }
   .section_home .home_div {
@@ -273,6 +276,8 @@
   padding: 0 0 5% 0;
   z-index: 0;
   opacity: 1; }
+  .home_page div.home {
+    display: none; }
   .home_page .home_page_left {
     width: 50%;
     padding: 3% 0% 3% 3%; }
@@ -283,15 +288,29 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-family: fantasy;
     letter-spacing: 3px;
-    font-style: oblique; }
+    font-style: oblique;
+    display: grid; }
+    @media only screen and (max-width: 75rem) {
+      .home_page h1 {
+        display: block;
+        gap: 0.5rem;
+        text-align: center; } }
   .home_page h2 {
     font-size: 2.5rem;
     font-weight: 700;
     font-family: poppins; }
+    @media only screen and (max-width: 75rem) {
+      .home_page h2 {
+        font-size: 2rem;
+        text-align: center; } }
   .home_page h4 {
     font-size: 1.6rem;
     color: #cab4b4;
     font-weight: 100; }
+    @media only screen and (max-width: 75rem) {
+      .home_page h4 {
+        font-size: 1.3rem;
+        text-align: center; } }
   .home_page .home_page_right {
     width: 50%; }
     .home_page .home_page_right img {
@@ -315,20 +334,92 @@
       opacity: 1; }
 
 @media only screen and (max-width: 75rem) {
-  .section_home {
-    height: 100%; }
-    .section_home .home_cal {
-      display: block; }
-    .section_home .home_div {
-      display: flex; }
-    .section_home select {
-      padding: 1%; }
-    .section_home .home_div {
-      display: flex; }
-    .section_home form {
-      display: block; }
-    .section_home .home_cal input.input-field {
-      padding: 0.5% 52% 0.5% 0.4%; } }
+  .home_page div.home {
+    display: block;
+    width: 42rem;
+    padding: 2%; }
+  section#home.home_page .home_cal {
+    display: block; }
+  section#home.home_page .home_div {
+    display: flex;
+    justify-content: space-between; }
+  section#home.home_page select {
+    padding: 1%;
+    font-size: 2rem; }
+  section#home.home_page form {
+    display: block; }
+  section#home.home_page .home_cal input.input-field {
+    padding: 0.5% 52% 0.5% 0.4%;
+    margin-bottom: 1rem; }
+  .home_cal {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    justify-items: center; }
+    .home_cal input.input-field {
+      font-size: 2.5rem;
+      color: #3f3f43;
+      padding: 1% 52% 1% 0.9%;
+      border: 1px solid #a49f9f;
+      border-radius: 5px; }
+    .home_cal select {
+      padding: 1%;
+      font-size: 1.4rem;
+      color: #3f3f43;
+      width: max-content;
+      padding: 6% 2%;
+      border-radius: 5px;
+      border: 1px solid #b4acac; }
+      .home_cal select:active, .home_cal select:focus, .home_cal select:visited {
+        border: 1px solid #0722d2; }
+      .home_cal select:visited, .home_cal select:focus, .home_cal select:checked {
+        width: max-content; }
+      .home_cal select option {
+        font-size: 1rem; }
+    .home_cal h3 {
+      display: none; } }
+
+.home_cal .search-container {
+  float: right;
+  border-radius: 25px;
+  padding: 0 1%;
+  display: flex;
+  gap: 1rem;
+  width: 100%; }
+  .home_cal .search-container .search_1 {
+    border-radius: 25px;
+    margin-top: 1rem;
+    text-align: center;
+    height: 2rem;
+    width: 100%;
+    border: 1px solid #b4acac; }
+    .home_cal .search-container .search_1:hover {
+      border: 1px solid black; }
+    .home_cal .search-container .search_1:active, .home_cal .search-container .search_1:focus, .home_cal .search-container .search_1:visited {
+      border: 1px solid #0ae27a; }
+  .home_cal .search-container .search_2 {
+    margin-top: 1rem;
+    background-color: #bbb3b3;
+    width: 7rem;
+    text-align: center;
+    border-radius: 25px;
+    border: none; }
+
+.home_cal input[type=text] {
+  padding: 6px;
+  font-size: 17px;
+  border: none;
+  border-radius: 20px; }
+
+.home_cal .search-container button {
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer; }
+
+.home_cal .search-container button:hover {
+  background: #ccc;
+  border: none; }
 
 .explore {
   padding: 2%;
