@@ -216,6 +216,9 @@
       padding: 6% 2%;
       border-radius: 5px;
       border: 1px solid #b4acac; }
+      @media only screen and (max-width: 25rem) {
+        .section_home .home_cal select {
+          font-size: 1.5rem; } }
       .section_home .home_cal select:active, .section_home .home_cal select:focus, .section_home .home_cal select:visited {
         border: 1px solid #0722d2; }
       .section_home .home_cal select:visited, .section_home .home_cal select:focus, .section_home .home_cal select:checked {
@@ -281,6 +284,9 @@
   .home_page .home_page_left {
     width: 50%;
     padding: 3% 0% 3% 3%; }
+    @media only screen and (max-width: 25rem) {
+      .home_page .home_page_left {
+        width: 100%; } }
   .home_page h1 {
     font-size: 4.2rem;
     text-transform: uppercase;
@@ -313,6 +319,10 @@
         text-align: center; } }
   .home_page .home_page_right {
     width: 50%; }
+    @media only screen and (max-width: 75rem) {
+      .home_page .home_page_right {
+        width: 40%;
+        margin-left: 5%; } }
     .home_page .home_page_right img {
       width: 35%;
       height: 50%;
@@ -349,7 +359,7 @@
   section#home.home_page form {
     display: block; }
   section#home.home_page .home_cal input.input-field {
-    padding: 0.5% 52% 0.5% 0.4%;
+    padding: 1% 52% 1% 1%;
     margin-bottom: 1rem; }
   .home_cal {
     display: flex;
@@ -420,6 +430,31 @@
 .home_cal .search-container button:hover {
   background: #ccc;
   border: none; }
+
+@media only screen and (max-width: 25rem) {
+  .home_page div.home {
+    width: 50%;
+    display: block;
+    width: 42rem;
+    padding: 2%; }
+  section#home.home_page .home_div {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1rem; }
+  section#home.home_page .home_cal input.input-field {
+    padding: 1% 1% 1% 1%;
+    margin-bottom: 1rem;
+    width: 30rem; }
+  section#home.home_page select {
+    font-size: 1.4rem; }
+  .home_cal .search-container {
+    float: left;
+    width: 70%; } }
+
+@media only screen and (max-width: 25rem) and (max-width: 25rem) {
+  .home_page {
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    display: block; } }
 
 .explore {
   padding: 2%;

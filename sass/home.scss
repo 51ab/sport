@@ -12,6 +12,8 @@ font-size: 1.3rem;
   }
 .home{
     width: 100%;
+    
+    
 }
 .home_div{
  
@@ -32,6 +34,9 @@ font-size: 1.3rem;
        padding: 4% 2%;
        border: 1px solid rgb(164, 159, 159);
        border-radius: 5px;
+       
+
+      
     }
     select{
         padding: 1%;
@@ -41,6 +46,10 @@ font-size: 1.3rem;
         padding: 6% 2%;
         border-radius: 5px;
         border: 1px solid rgb(180, 172, 172);
+        @media only screen and(max-width:$bp-smallest)
+    {
+      font-size: 1.5rem;
+    }
         &:active,&:focus,&:visited{
           border: 1px solid rgb(7, 34, 210);
         }
@@ -131,6 +140,7 @@ font-size: 1.3rem;
     padding:0 0 5% 0;
     z-index: 0;
     opacity: 1;
+  
  
 div.home{
   display: none;
@@ -138,6 +148,9 @@ div.home{
     .home_page_left{
       width:50%;
       padding: 3% 0% 3% 3%;
+      @media only screen and(max-width:$bp-smallest){
+        width: 100%;
+      }
 
     }
     h1{
@@ -178,7 +191,12 @@ div.home{
     }
     .home_page_right{
       width:50%;
-     
+
+      @media only screen and(max-width:$bp-largest)
+      {
+      width: 40%;
+      margin-left: 5%;
+      }
       img{
       width:35%;
       height:50%;
@@ -235,7 +253,7 @@ div.home{
         display: block;
       }
        .home_cal input.input-field{
-        padding: 0.5% 52% 0.5% 0.4%;
+        padding: 1% 52% 1% 1%;
         margin-bottom: 1rem;
       }}
       .home_cal{
@@ -338,3 +356,53 @@ div.home{
         border: none;
       
   }
+
+
+  
+  
+    @media only screen and(max-width:$bp-smallest)
+    {
+      
+    
+    
+      .home_page div.home {
+        width: 50%;
+        display: block;
+        
+        width: 42rem;
+        
+      padding: 2%;
+      }
+      section#home.home_page .home_div {
+        display: flex;
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+     
+        
+        section#home.home_page .home_cal input.input-field{
+           
+          
+           padding: 1% 1% 1% 1%;
+           margin-bottom: 1rem;
+           width: 30rem;
+    
+    }
+    section#home.home_page select{
+    
+  
+  font-size: 1.4rem;
+
+
+}
+.home_cal .search-container{
+float:left;
+width: 70%;
+}
+.home_page{
+ 
+  @media only screen and(max-width:$bp-smallest)
+{  clip-path: polygon(0% 0% , 100% 0%, 100% 100%, 0% 100% );
+  display: block;
+}
+}}
