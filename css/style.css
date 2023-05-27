@@ -317,31 +317,127 @@
       .home_page h4 {
         font-size: 1.3rem;
         text-align: center; } }
+  @media only screen and (max-width: 50rem) {
+    .home_page .home_page_right {
+      width: 95%;
+      margin-left: 12%;
+      display: block;
+      text-align: center;
+      justify-content: space-between;
+      padding: 1%; }
+      .home_page .home_page_right img {
+        width: 40%;
+        height: 50%;
+        border-radius: 100%; }
+      .home_page .home_page_right .img_1 {
+        width: 40%;
+        height: 50%;
+        border-radius: 100%;
+        float: none;
+        margin-top: 0; }
+      .home_page .home_page_right .img_2 {
+        width: 40%;
+        height: 50%;
+        border-radius: 100%;
+        margin-top: 0; }
+      .home_page .home_page_right .img_3 {
+        width: 40%;
+        height: 50%;
+        border-radius: 100%;
+        margin-top: 0; }
+      .home_page .home_page_right .img_4 {
+        width: 40%;
+        height: 50%;
+        border-radius: 100%;
+        margin-top: 0; } }
   .home_page .home_page_right {
     width: 50%; }
     @media only screen and (max-width: 75rem) {
       .home_page .home_page_right {
         width: 40%;
         margin-left: 5%; } }
+    @media only screen and (max-width: 62.5rem) {
+      .home_page .home_page_right {
+        width: 95%;
+        margin-left: 12%;
+        display: block;
+        text-align: center;
+        justify-content: space-between;
+        padding: 1%; } }
+    @media only screen and (max-width: 25rem) {
+      .home_page .home_page_right {
+        width: 95%;
+        margin-left: 0%;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+        padding: 3%; } }
     .home_page .home_page_right img {
       width: 35%;
       height: 50%;
       border-radius: 100%;
       z-index: 9; }
+      @media only screen and (max-width: 62.5rem) {
+        .home_page .home_page_right img {
+          width: 95%;
+          width: 40%;
+          height: 50%;
+          border-radius: 100%;
+          margin-top: 0;
+          float: none; } }
+      @media only screen and (max-width: 25rem) {
+        .home_page .home_page_right img {
+          width: 22%;
+          height: 50%;
+          border-radius: 100%;
+          z-index: 9; } }
     .home_page .home_page_right .img_1 {
       float: right; }
+      @media only screen and (max-width: 62.5rem) {
+        .home_page .home_page_right .img_1 {
+          float: none;
+          width: 40%;
+          height: 50%; } }
+      @media only screen and (max-width: 25rem) {
+        .home_page .home_page_right .img_1 {
+          float: none;
+          width: 22%; } }
     .home_page .home_page_right .img_2 {
       margin-top: 1.5rem;
       float: right;
       width: 30%; }
+      @media only screen and (max-width: 62.5rem) {
+        .home_page .home_page_right .img_2 {
+          width: 40%;
+          height: 50%;
+          margin-top: 0;
+          float: none; } }
+      @media only screen and (max-width: 25rem) {
+        .home_page .home_page_right .img_2 {
+          margin-top: 0rem;
+          float: none;
+          width: 22%; } }
     .home_page .home_page_right .img_3 {
       width: 45%;
       margin-top: -7rem;
       height: 60%; }
+      @media only screen and (max-width: 62.5rem) {
+        .home_page .home_page_right .img_3 {
+          width: 40%;
+          height: 50%;
+          margin-top: 0; } }
+      @media only screen and (max-width: 25rem) {
+        .home_page .home_page_right .img_3 {
+          width: 25%;
+          margin-top: 0; } }
     .home_page .home_page_right .img_4 {
-      margin-top: -2rem;
+      margin-top: 0rem;
       z-index: 99;
       opacity: 1; }
+      @media only screen and (max-width: 62.5rem) {
+        .home_page .home_page_right .img_4 {
+          width: 40%;
+          height: 50%; } }
 
 @media only screen and (max-width: 75rem) {
   .home_page div.home {
