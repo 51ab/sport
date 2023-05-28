@@ -14,12 +14,17 @@
     padding: 1% 1%;
     .logo{
         //margin-left: 30rem;
+        
+        @media only screen and(max-width:$bp-small)
+       { position: relative;
+        margin-left: -15rem;}
     
         }
         h2.nav_heading_logo{
             visibility: hidden;
             margin-left: 0rem;
             width: 0;
+           
         }
         @media only screen and(max-width:$bp-largest)
         {
@@ -32,6 +37,10 @@
                 align-items: flex-end;
                 margin-left: 2rem;
                 visibility: visible;
+                @media only screen and(max-width:$bp-small)
+                {
+                    visibility: hidden;
+                }
                }}
       
     &_left{

@@ -70,13 +70,21 @@
     }
     .start_right{
         width:50%;
-        display: gridS;
+        display: grid;
 img{
     width:49%;
     border-radius: 5px;
 }
 .img_1{
 width:100%;
+}
+@media only screen and(max-width:$bp-small){
+    .img2{
+       
+        display: grid;
+        justify-items: center;
+        width: 16rem;
+    }
 }
     }
 }
