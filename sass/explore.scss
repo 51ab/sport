@@ -17,12 +17,18 @@
         justify-items: center;
         align-items: center;
         text-align: center;
-
+        @media only screen and(max-width:$bp-medium){
+            gap:0.8rem;
+            width: 70%;
+        }
         @media only screen and(max-width:$bp-small){
+            gap:1rem;
+            width: 100%;
         .activity_items_4,.activity_items_5,.activity_items_6
         {
             display: none;
         }}
+       
 
         button{
             background-color: transparent;

@@ -149,7 +149,7 @@ div.home{
       width:50%;
       padding: 3% 0% 3% 3%;
       @media only screen and(max-width:$bp-small){
-        width: 100%;
+        width: 96%;
       }
 
     }
@@ -261,7 +261,7 @@ div.home{
       }
       @media only screen and(max-width:$bp-small){
 
-        width: 95%;
+        width: 94%;
        margin-left: 0%; 
       display: flex;
       text-align: center;
@@ -297,6 +297,7 @@ div.home{
           @media only screen and(max-width:$bp-small){
             float: none;
             width: 22%;
+            height: auto;
           }
       }
       .img_2{
@@ -315,6 +316,7 @@ div.home{
           margin-top: 0rem;
         float: none;
         width:22%;
+        height: auto;
         }
         
       }
@@ -330,6 +332,7 @@ div.home{
         @media only screen and(max-width:$bp-small){
           width:25%;
           margin-top: 0;
+          height: auto;
         }
       }
       .img_4{
@@ -343,6 +346,7 @@ div.home{
       @media only screen and(max-width:$bp-small){
         width:22%;
         margin-top: 0;
+        height: auto;
       }
       
     }}
@@ -489,17 +493,17 @@ div.home{
     
     
       .home_page div.home {
-        width: 50%;
+        width: 90%;
         display: block;
         
-        width: 42rem;
+       
         
-      padding: 2%;
+      padding: 0%;
       }
       section#home.home_page .home_div {
         display: flex;
         justify-content: flex-start;
-        gap: 1rem;
+        gap: 0.7rem;
     }
      
         
@@ -508,7 +512,7 @@ div.home{
           
            padding: 1% 1% 1% 1%;
            margin-bottom: 1rem;
-           width: 30rem;
+           width: 29rem;
     
     }
     section#home.home_page select{
@@ -520,7 +524,7 @@ div.home{
 }
 .home_cal .search-container{
 float:left;
-width: 70%;
+width: 90%;
 }
 .home_page{
  
@@ -528,4 +532,16 @@ width: 70%;
 {  clip-path: polygon(0% 0% , 100% 0%, 100% 100%, 0% 100% );
   display: block;
 }
+}}
+@media only screen and(max-width:$bp-medium){
+.home_page div.home {
+  display: block;
+  width: 24rem;
+  padding: 2%;
+}
+.home_div{
+  gap:0.5rem;
+}
+section#home.home_page select{
+  font-size: 1.3rem;
 }}
