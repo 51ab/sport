@@ -545,3 +545,9 @@ width: 90%;
 section#home.home_page select{
   font-size: 1.3rem;
 }}
+
+@media only screen and(max-width:$bp-xsmall){
+  .home_cal .search-container{
+    width:116%;
+  }
+}

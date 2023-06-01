@@ -576,6 +576,10 @@
   section#home.home_page select {
     font-size: 1.3rem; } }
 
+@media only screen and (max-width: 22rem) {
+  .home_cal .search-container {
+    width: 116%; } }
+
 .explore {
   padding: 2%;
   justify-content: center; }
@@ -903,3 +907,7 @@
 @media only screen and (max-width: 75rem) {
   * {
     font-size: 70%; } }
+
+@media only screen and (max-width: 22rem) {
+  * {
+    font-size: 50%; } }

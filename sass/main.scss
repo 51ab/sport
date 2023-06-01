@@ -14,3 +14,8 @@
       font-size: 70%;
     
         }}
+        @media only screen and(max-width:$bp-xsmall){
+*{
+  font-size: 50%;
+}
+        }
