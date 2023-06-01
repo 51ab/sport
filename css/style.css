@@ -732,6 +732,9 @@
     padding: 0 25%;
     justify-content: center;
     gap: 3rem; }
+    @media only screen and (max-width: 25rem) {
+      .work .workarrow_box {
+        padding: 16px 4%; } }
     .work .workarrow_box .workarrow_boxes_2 {
       display: flex; }
       .work .workarrow_box .workarrow_boxes_2::after {
@@ -810,6 +813,9 @@
   background-color: #faf6f6;
   padding: 10% 15%;
   gap: 2rem; }
+  @media only screen and (max-width: 25rem) {
+    .getStarted {
+      padding: 10% 4%; } }
   .getStarted .start_left {
     width: 50%;
     gap: 1rem;
@@ -819,10 +825,16 @@
       font-weight: bolder;
       font-style: bold;
       font-family: poppins; }
+      @media only screen and (max-width: 25rem) {
+        .getStarted .start_left h1 {
+          font-size: 1.7rem; } }
     .getStarted .start_left p {
       color: #7c7474;
       padding: 2% 6% 2% 0;
       font-family: poppins; }
+      @media only screen and (max-width: 25rem) {
+        .getStarted .start_left p {
+          font-size: 0.6rem; } }
     .getStarted .start_left ul {
       list-style: none;
       display: grid;
@@ -862,13 +874,22 @@
     .getStarted .start_right img {
       width: 49%;
       border-radius: 5px; }
+      @media only screen and (max-width: 25rem) {
+        .getStarted .start_right img {
+          width: 75%; } }
     .getStarted .start_right .img_1 {
       width: 100%; }
+      @media only screen and (max-width: 25rem) {
+        .getStarted .start_right .img_1 {
+          width: 95%; } }
     @media only screen and (max-width: 37.5rem) {
       .getStarted .start_right .img2 {
         display: grid;
         justify-items: center;
         width: 16rem; } }
+  @media only screen and (max-width: 37.5rem) and (max-width: 25rem) {
+    .getStarted .start_right .img2 {
+      gap: 0.2rem; } }
 
 .footer {
   display: flex;
